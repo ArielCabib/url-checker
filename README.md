@@ -21,3 +21,12 @@ go build
 
 and you'll get a nice csv describing the statuses of all input lines in the same order.
 I didn't use go routines because it caused lots of 429. The sites were sure they are DoS'ed.
+
+## Compiling for different OS's
+
+Look here for all possibilities: https://golang.org/doc/install/source#environment
+For example, compile for windows:
+
+```
+GOOS=windows GOARCH=amd64 go build
+```
